@@ -1,4 +1,4 @@
-/* Base styles */
+/***** Base styles *****/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -14,7 +14,7 @@ color: #2b2b2b;
     background: #ebf3f5;
 }
 
-/***************************************** Header *****************************/
+/***************************************** Header ******************************/
 
 header {
     height: 500px;
