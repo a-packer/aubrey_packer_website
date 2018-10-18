@@ -252,23 +252,75 @@ header h2 span {
 
 /*********************************************************************** work portfolio page ***********************************************************/
 
+body {
+    background: #ebf3f5;
+}
+
+#return_home p {
+    background-color: #b1ccd3;
+    padding: 20px 0px 20px 140px;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0px 0px 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c49075;
+    border-width: 4px;
+}
+#return_home a {
+    color: white;
+}
+
+
 #left_column, #right_column {
     float: left;
 }
 
 #left_column div, #right_column div {
-    background: lightblue;
-    height: 500px;
-    width: 550px;
+    background: #ebf3f5;
+    height: 400px;
+    width: 610px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
 }
 #left_column p, #right_column p {
-    background: lightgreen;
-    height: 500px;
+    font-size: 50px;
+    color: #7f7f7f;
+    line-height: 90px;
+    background: #ebf3f5;
+    height: 250px;
     margin: 0px;
-    width: 450px;
+    width: 510px;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 #right_column div {
     margin-left: -100px;
 }
+
+.website_image {
+    height: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: #7f7f7f;
+    /* First we need to help some browsers along for this to work.
+        Just because a vendor prefix is there, doesn't mean it will
+        work in a browser made by that vendor either, it's just for
+        future-proofing purposes I guess. */  
+    -o-transition:color .2s ease-out, background 2s ease-in;
+    -ms-transition:color .2s ease-out, background 2s ease-in;
+    -moz-transition:color .2s ease-out, background 2s ease-in;
+    -webkit-transition:color .2s ease-out, background 2s ease-in;
+    /* ...and now for the proper property */
+    transition:color .2s ease-out, background 2s ease-in;
+    }
+
+    a:hover { opacity: 0.5;}
 
 
