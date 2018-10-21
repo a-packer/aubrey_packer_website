@@ -199,7 +199,7 @@ header h2 span {
 
 #contact img #contact-image {
     margin-left: 25px;
-    border: 12px solid #ffffff;
+    border: 5px solid white;
 }
 
 #contact #email-header, #contact #social-media-header, #contact ul {
@@ -211,19 +211,20 @@ header h2 span {
 
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 39px;
     line-height: 44px;
     font-weight: bold;
     color: #7f7f7f;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 #contact #email-header {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: lighter;
     line-height: 44px;
     margin: -30px 0 5px 0;
     color: #7f7f7f;
+    margin-bottom: 30px;
 }
 #contact #social-media-header {
     font-weight: 'Source Sans Pro', sans-serif;
@@ -231,7 +232,7 @@ header h2 span {
     color: #7f7f7f;
     font-weight: bold;
     line-height: 44px;
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 0;
 }
 #contact a {
     text-decoration: none;
