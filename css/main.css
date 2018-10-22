@@ -256,8 +256,8 @@ header h2 span {
 
 /*********************************************************************** work portfolio page ***********************************************************/
 
-body {
-    background: #ebf3f5;
+#portfolio_body {
+    background-color: #ebf3f5;
 }
 
 #return_home p {
@@ -309,6 +309,8 @@ body {
 .website_image {
     height: 400px;
 }
+  
+    /********** the following code for links is modified from Marcel's stack overflow demo. http://jsfiddle.net/Marcel/xejsM/52/ */
 
 a {
     text-decoration: none;
