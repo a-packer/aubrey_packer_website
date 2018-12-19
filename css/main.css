@@ -376,18 +376,20 @@ a {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    border-bottom-style: solid;
-    border-bottom-color: #7e152c;
-    margin: 30px 0px 0px 20px;
+    margin: 30px 0px 0px 0px;
+    width: 550px;
+    padding-left: 500px;
  
 }
 #consultant{
     color: #303030;
     font-family: 'Nixie One', cursive;
     font-size: 45px;
-    text-align: center;
     margin-top: 5px;
     padding-top: 10px;
+    padding-left: 500px;
+    letter-spacing: 4px;
+    height: 80px;
 }
 
 /********************** navigation menu ****************/
@@ -396,31 +398,35 @@ a {
     font-family: 'Nunito', sans-serif;
     background: darkgrey;
     width: auto;
-    height: 150px;
+    height: 70px;
     opacity: 0.8;
 }
 #amie_carter_nav li {
-    font-size: 30px;
+    font-size: 18px;
     text-decoration: none;
     list-style: none;
-    float: left;
-    width: 25%;
+    float: right;
+    width: 15%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 #amie_carter_nav i { 
-    font-size: 50px;
-    color: #7e152c;
+    font-size: 22px;
+    color: #303030;
 }
 
 a:hover { opacity: 0.5;}
 
 #amie_carter_nav p {
     margin-top: 5px;
-    color: #7e152c;
+    color: #303030;
 }
 
 /******************** about me **************************/
+
+#amie_carter_image div {
+    float: left;
+}
 
 #amie_carter_about div {
     float: left;
@@ -428,16 +434,16 @@ a:hover { opacity: 0.5;}
 }
 #amie_carter_about p {
     font-family: 'Nixie One', cursive;
-    font-size: 35px;
+    font-size: 28px;
     color: #303030;
     width: auto;
-    height: 546px;
+    height: 241px;
     background-color: darkgrey;
     opacity: 0.8;
     margin-left: 500px;
     margin-top:0px;
     margin-bottom: 0px;
-    line-height: 80px;
+    line-height: 40px;
     text-align: center;
     padding: 50px 10px 0px 10px;
     overflow: hidden;
@@ -488,7 +494,7 @@ a:hover { opacity: 0.5;}
 }
 
 #resources div {
-    height: 1100px;
+    height: 500px;
 }
 
 ul.links_half {
@@ -496,7 +502,7 @@ ul.links_half {
     width: 50%;
     background: darkgrey;
     margin: 0px 0px;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 0px 0px;
     opacity: 0.8;
     float: left;
     margin: auto;
@@ -504,7 +510,7 @@ ul.links_half {
 
 }
 #resources li {
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Nixie One', cursive;
     line-height: 100px;
     list-style: none;
@@ -656,7 +662,120 @@ div.full_width_picture {
     font-weight: bold;
     font-size: 50px;
 
+/******************************************************************* Tiny Taco Tabernacle ****************************************************/
+
 }
+.tiny-taco body {
+    width: 1366px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    background-color: purple;
+}
+
+#bg {
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+  }
+
+
+/********************* webpage title ******************************/
+
+.tiny-taco h1 {
+    color: #97c08a;
+    font-family: 'Damion', cursive;
+    font-size: 130px;
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    width: 1366px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.tiny-taco span {
+    font-size: 170px;
+    letter-spacing:-25px;
+}
+
+/********************* navigation and extra info boxes ***************/
+
+.tiny-taco #navigation, #extra_info {
+    width: 1366px;
+    background: green;
+    opacity: 0.8;
+    text-align: center;
+}
+.tiny-taco #navigation section {
+    height: 170px;
+    text-align: center;
+    padding-left: 23px;
+}
+.tiny-taco #navigation p {
+    color: #cbcbcb;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    list-style-type: none;
+    float: left;
+    padding-left: 4px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-top: 25px;
+    text-shadow: 1px 1px 1px black;
+    }
+
+/********** the following code for links is modified from Marcel's stack overflow demo. http://jsfiddle.net/Marcel/xejsM/52/ */
+.tiny-taco a {
+    text-decoration: none;
+    color: #cbcbcb;
+    /* First we need to help some browsers along for this to work.
+        Just because a vendor prefix is there, doesn't mean it will
+        work in a browser made by that vendor either, it's just for
+        future-proofing purposes I guess. */  
+    -o-transition:color .2s ease-out, background 2s ease-in;
+    -ms-transition:color .2s ease-out, background 2s ease-in;
+    -moz-transition:color .2s ease-out, background 2s ease-in;
+    -webkit-transition:color .2s ease-out, background 2s ease-in;
+    /* ...and now for the proper property */
+    transition:color .2s ease-out, background 2s ease-in;
+    }
+
+.tiny-taco a:hover { color: purple;}
+.tiny-taco i:hover {color: purple}
+
+
+.tiny-taco #extra_info {
+    margin-top: 700px;
+    font-size: 60px;
+    color: #cbcbcb;
+    height: 220px;
+}
+.tiny-taco i {
+    color: white;
+}
+.tiny-taco #extra_info span {
+    height: 10px;
+}
+
+/*********************************** footer **********************/
+.tiny-taco h3 {
+    font-family: 'Damion', cursive;
+    font-size: 80px;
+    text-shadow: 3px 3px black;
+}
+.tiny-taco footer {
+    width: 1366px;
+    margin-top: 170px;
+    color: purple;
+    font-size: 46px;
+    text-align: center;
+    background: #97c08a;
+    padding: 5px 0px 40px 0px;
+    line-height: 50px;
+}  
 
 
 
