@@ -115,7 +115,7 @@ header h2 span {
 }
  
 #about p {
-    font-size: 21px;
+    font-size: 22px;
     color: #7f7f7f;
     line-height: 40px;
     padding-left: 50px;
@@ -127,7 +127,7 @@ header h2 span {
     font-weight: bold;
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 855px) {
     #about p {
         font-size: 18px;
         overflow: hidden;
@@ -185,7 +185,7 @@ header h2 span {
  
 #skills p {
     font-family: 'Lora',serif;
-    font-size: 23px;
+    font-size: 25px;
     line-height: 30px;
     padding: 0 5%;
     color: #7f7f7f;
@@ -196,11 +196,11 @@ header h2 span {
         width: 100%;
     }
     #skills p {
-        font-size: 40px;
+        font-size: 33px;
         line-height: 45px;
     }
     #skills {
-        height: 1500px;
+        height: 1400px;
     }
     #skills h5 {
         font-size: 40px;
@@ -208,16 +208,16 @@ header h2 span {
         text-align: center;
     }
   }
-  @media screen and (max-width: 800px) {
-      #skills p {
-          font-size: 30px;
-      }
+@media screen and (max-width: 800px) {
+    #skills p {
+        font-size: 30px;
     }
-    @media screen and (max-width: 800px) {
-        #skills p {
-            font-size: 20px;
-        }
+}
+@media screen and (max-width: 910px) {
+    #skills p {
+        font-size: 22px;
     }
+}
 /************************************ Link to Portfolio********************/
 
 #portfolio {
@@ -246,6 +246,13 @@ header h2 span {
     font-weight:bold;
 }
 
+@media screen and (max-width: 720px) {
+    #portfolio {
+        font-size: 30px;
+    }
+}
+
+
 /**************************************** Contact ******************************/
 
 #contact {
@@ -256,15 +263,12 @@ header h2 span {
     padding: 80px 0px 0px 0px;
 }
 #contact-image {
-    width: 90%;
-    padding-top: 10%;
+    width: 50%;
+    margin-left: 25%;
 }
 
-#contact #email-header, #contact #social-media-header, #contact ul {
-    padding-left: 0px;
-}
 #contact #envelope {
-    padding: 0 10px 0 0px;
+    padding: 0 10px 0 -10px;
 }
 
 #contact h2 {
@@ -274,13 +278,14 @@ header h2 span {
     font-weight: bold;
     color: #7f7f7f;
     padding-bottom: 10px;
+    margin-left: 0px;
 }
 #contact #email-header {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 36px;
     font-weight: lighter;
     line-height: 44px;
-    margin: -30px 0 5px 0;
+    margin: -30px 0 5px -0px;
     color: #7f7f7f;
     margin-bottom: 30px;
 }
@@ -290,7 +295,7 @@ header h2 span {
     color: #7f7f7f;
     font-weight: bold;
     line-height: 44px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 0px;
 }
 #contact a {
     text-decoration: none;
@@ -305,7 +310,7 @@ header h2 span {
 #contact ul li {
     display: inline-block;
     padding-right: 30px;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 #contact ul img {
     font-size: 32px;
