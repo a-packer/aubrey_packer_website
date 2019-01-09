@@ -416,7 +416,7 @@ header h2 span {
 /**************************************************************************** Amie Carter ***********************************************************************/
 html {
     font-size: 35px;
-    line-heigh: 40px;
+    line-height: 40px;
 }
 .unbehaved-element {
     font-size: 2em;
@@ -429,14 +429,12 @@ html {
     font-size: 1.85em; /* Fine tune unbehaved elements */
   }
 }
-@media(max-width: 980px) {
-  html {
-    font-size: 16px;
-  }
+a {
+    text-decoration: none;
 }
 
 #amie_carter_body {
-    background: url("http://kb4images.com/images/metal-wallpaper/36073635-metal-wallpaper.jpg");
+    background: darkgrey;
     background-size: auto;
     background-attachment: fixed;
 }
@@ -444,8 +442,9 @@ html {
 #amie_carter_about h3, #available_trainings_section h3, #amie_carter_contact h3, #resources h3  {
     color: #7e152c;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3em;
+    font-weight: light;
     letter-spacing: .1em;
     width: auto;
     margin-top: 10px;
@@ -457,6 +456,7 @@ html {
 
 #amie_carter_contact h3 {
     font-size: 1.85em;
+    line-height: 1.85em;
 }
 
 
@@ -464,10 +464,11 @@ html {
 
 #amie_carter_header {
     color: #7e152c;
-    font-family: 'Nixie One', cursive;
-    font-size: 63px;
+    font-family: 'Merriweather', serif;
+    font-size: 68px;
+    line-height: 75px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 4.5px;
     text-align: center;
     border-bottom-style: solid;
     border-bottom-color: #7e152c;
@@ -477,24 +478,46 @@ html {
 }
 #consultant {
     color: #303030;
-    font-family: 'Nixie One', cursive;
-    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    padding-top: 10px;
     width: auto;
+    margin: 0px;
+    padding: 0px;
+    line-height: 2.2em;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 1220px) {
+    #consultant {
+        font-size: 1.8em;
+        letter-spacing: normal;
+    }
+}
+@media screen and (max-width: 1070px) {
+    #consultant {
+        width: auto;
+    }
+}
+@media(max-width: 1040px) {
+    #consultant {
+        letter-spacing: 2px;
+        font-size: 2em;
+    };
 }
 
 /********************** navigation menu ****************/
 
 #amie_carter_nav {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: none;
     width: auto;
     height: 5em;
     opacity: 0.8;
     float: right;
+}
+#amie_carter_nav ul {
+    padding-top: 10px;
 }
 #amie_carter_nav li {
     font-size: .91em;
@@ -503,7 +526,7 @@ html {
     float: left;
     width: 6em;
     text-align: center;
-    margin-top: .2em;
+    margin-top: .2em;;
 }
 #amie_carter_nav i { 
     font-size: 1em;
@@ -517,39 +540,42 @@ html {
     color: #7e152c;
 }
 
+@media(max-width: 1040px) {
+    #amie_carter_nav {
+      display: none;
+    }
+}
 /******************** about me **************************/
 
-#amie_image {
+#amie_carter_body section {
+    align-content: space-around;
+    overflow: hidden;
+    font-family: 'Merriweather', serif;
+    font-size: 1.7em;
+    line-height: 2em;
+    color: #303030;
+    background: lightgrey;
+    opacity: 0.8;
+    text-align: center;
+    padding: 0px 5px 5px 20px;
+    margin-bottom: 25px;
+}
+#amie_carter_image {
     float: left;
-    width: 35%;
+    width: 30%;
     border: 0px;
     margin-top: 0em;
+    margin-right: 5px;
 }
-
 #amie_carter_about p {
-    font-family: 'Nixie One', cursive;
-    font-size: 1.4em;
-    color: #303030;
-    width: auto;
-    height: auto;
-    min-height: 18em;
-    background-color: darkgrey;
-    opacity: 0.8;
-    margin-top:0px;
-    margin-bottom: 0px;
-    float: right;
-    width: 65%;
-    line-height: 2.2em;
-    text-align: center;
-    overflow: hidden;
+    padding-top: 20px;
+    margin-top: 5px;
+    font-weight: 200;
 }
-#amie_carter_about h3 {
-    color: #303030;
-    font-size: 40px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    font-weight: lighter;
-    margin-bottom: 10px;
+@media screen and (min-width: 700px) {
+    #amie_carter_image {
+        width: 20%;
+    }
 }
 
 /*************************** available trainings ************/
@@ -562,23 +588,34 @@ html {
     margin: 0px 0px;
     width: 33.3%;
     float: left;
+    font-family: 'Poppins', sans-serif;
 }
 
 #available_trainings_section h4 {
     color: #303030;
-    font-family: 'Nixie One', cursive;
-    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
 }
 #available_trainings_section p {
     color: #303030;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: lighter;
     clear: both;
     padding: 0px 20px 0px 20px;
     float: left;
+}
+
+@media screen and (max-width: 1200px) {
+    #available_trainings_section div {
+        width: 100%;
+    }
+    #available_trainings_section h4 {
+        font-weight: bold;
+    }
 }
 
 /******************************* resources ************************/
@@ -586,27 +623,27 @@ html {
 #resources {
     float: left;
     width: 100%;  
+    background: lightgrey;
+    padding-top: 20px;
 }
 
 #resources div {
     height: 1100px;
+    overflow: hidden;
 }
 
 ul.links_half {
     color: #303030;
     width: 50%;
-    background: darkgrey;
     margin: 0px 0px;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 10px 0px;
     opacity: 0.8;
     float: left;
     margin: auto;
-
-
 }
 #resources li {
     font-size: 50px;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Poppins', sans-serif;
     line-height: 100px;
     list-style: none;
     text-align: center;
@@ -617,12 +654,20 @@ ul.links_half {
     color: #303030;
 }
 
+@media screen and (max-width: 1200px) {
+    ul.links_half {
+        width: 100%;
+    }
+    #resources h3 {
+        font-size: 2.4em;
+    }
+}
 
 /******************************** contact info **********************/
 
 #amie_carter_contact {
     color: #7e152c;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 35px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -634,7 +679,7 @@ ul.links_half {
     width: auto;
 }
 #amie_carter_contact span {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Merriweather', serif;
     color: #303030;
     font-size: 50px;
     letter-spacing: 2px;
@@ -643,8 +688,8 @@ ul.links_half {
 }
 #amie_carter_contact p{
     margin: 0px;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     text-align: center;
     background-color: darkgrey;
 }
@@ -655,111 +700,9 @@ ul.links_half {
   
 /*********************************************************** Brianne's Photogrpahy *************************************************************/
 
-body {
-    background-color: whitesmoke;
-}
 
-section.content {
-    width: 1000px;
-    margin: auto;
-    margin-top: 40px;
-    height: 2800px;
- }
 
-#brianne_navigation {
-    text-decoration: none;
-    list-style: none;
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    clear: all;
-    height: 100px;
 
-}
-#brianne_navigation li {
-    float: left;
-    width: 200px;
-    font-size: 40px;
-    padding-top: 40px;
-}
-
-#brianne_face {
-    height: 400px;
-    width: 400px;
-    float: left;
-    clear: all;
-    padding-top: 40px;
-}
-
-#brianne_headers_1 {
-    color: black;
-    font-size: 100px;
-    width: 600px;
-    height: 350px;
-    padding-top: 40px;
-    text-align: center;
-    float: left;
-    font-weight: lighter;
-}
-div.left_column_picture {
-    width: 500px;
-    float: left;
-}
-div.right_column_picture {
-    width: 500px;
-    float: left;
-    clear: right;
-}
-div.full_width_picture {
-    width: 1000px;
-    clear: both;
-}
-#one {
-    background-color: red;
-    height: 250px;
-    clear: left;
-}
-#two {
-    background-color: orange;
-    height: 450px;
-    clear: left;
-}
-#three {
-    background-color: yellow;
-    height: 700px;
-}
-#four {
-    background-color: green;
-    height: 600px;
-}
-#five {
-    background-color: blue;
-    height: 100px;
-}
-#six {
-    background-color: darkviolet;
-    height: 700px;
-}
-#seven {
-    background-color: grey;
-    height: 500px;
-    clear: all;
-}
-#brianne_contact {
-    font-family: 'Sofia', Helvetica, Sans-serif;
-    color: black;
-    border-style: double;
-    border-color: black;
-    border-width: 5px;
-    font-size: 40px;
-    width: 990px;
-    margin-top: 20px;
-    text-align: center;
-    float: left;
-}
- #brianne_contact span {
-    font-weight: bold;
-    font-size: 50px;
 
 /******************************************************************* Tiny Taco Tabernacle ****************************************************/
 
@@ -798,7 +741,7 @@ div.full_width_picture {
     letter-spacing:-25px;
 }
 
-/********************* navigation and extra info boxes ***************/
+/****************** navigation and extra info boxes ***************/
 
 .tiny-taco #navigation, #extra_info {
     width: 1366px;
