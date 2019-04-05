@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+    </head>
+      
+
+    <body>
+
+      <section>
+
+      <h1> Let's Play with <span id="fill"><span id="f">Filters</span></span>!</h1>
+      
+      <canvas id="can"></canvas>
+
+    </section>
+
+    <div>
+
+      <label id="custom-file-upload">Upload Image
+        <input type="file" multiple="false" accept="image/*" id="imgInput" onchange="upload()"></label>
+      
+      <input type="button" value="GrayScale" id="gray" onclick="grayScale()">
+      
+      <input type="button" value="Rose" id="rose" onclick="makeRose()">
+      
+      <input type="button" value="Mirror" id="mirror" onclick="mirrorEffect()">
+      
+      <input type="button" value="Blinds" id="stripes" onclick="addStripes()">
+      
+      <input type="button" value="Rainbow" id="rainbow" onclick="makeRainbow()">
+      
+      <input type="button" value="Blur" id="blurred" onclick="makeBlur()">
+      
+      <input type="button" value="Original" id="orig" onclick="returnOrig()">
+      
+      </div>
+      
+
+      <script type="text/javascript" src="javascript.js"></script>
+
+
+
+
+    </body>
+
+    </html>

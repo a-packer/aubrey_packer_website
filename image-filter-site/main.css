@@ -1,0 +1,127 @@
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  color: #205E5F;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 60px;
+  width: 100%;
+  
+  }
+  #fill {
+    background-image: linear-gradient(red, orange, yellow, green, blue, purple);
+    opacity: 0.7;
+    margin-right: 10px;
+  }
+  #f {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
+    margin-left: 15px;
+    margin-right: 15px;
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+  #fill:hover {
+    background: grey;
+  }
+  #f {
+    color: white;
+  }
+  body {
+    height: 860px;
+    background-size: contain;
+    background-image: url("img/white.jpg");
+    
+  }
+  section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  canvas {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 5px #EDF7F5 solid;
+
+    min-width: 200px; 
+    max-width: 800px; 
+
+    min-height: 500px; 
+    max-height: 520px; 
+
+    margin-bottom: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
+  
+  input {
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    font-size: 25px;
+  } 
+  input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  div {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  #orig {
+    color:  #205E5F;
+    font-size: 25px ;
+    margin-left: 20px;
+    width: 150px;
+    height: 60px;
+    float: left;
+    clear: left;
+  }
+  
+  input[type="file"] {
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* 1 */
+    clip-path: inset(50%);
+    border: 0;
+  }
+  
+  #custom-file-upload {
+    background: #205E5F;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    border: 3px solid white;
+    outline: 5px solid grey;
+    height: 40px;
+    width: 300px;
+    float: left;
+    clear: left;
+    padding: 5px 1px 10px 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px; 
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+  
+  #custom-file-upload:hover {
+      background-color: grey;
+  }
+  
+  /* When the visually hidden child input has focus, style the parent. */
+  label:focus-within {
+    outline: 5px solid;
+  }

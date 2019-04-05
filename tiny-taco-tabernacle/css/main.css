@@ -1,0 +1,112 @@
+body {
+    width: 1366px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    background-color: purple;
+}
+
+#bg {
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+  }
+
+
+/********************* webpage title ******************************/
+
+h1 {
+    color: #97c08a;
+    font-family: 'Damion', cursive;
+    font-size: 130px;
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    width: 1366px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+span {
+    font-size: 170px;
+    letter-spacing:-25px;
+}
+
+/********************* navigation and extra info boxes ***************/
+
+#navigation, #extra_info {
+    width: 1366px;
+    background: green;
+    opacity: 0.8;
+    text-align: center;
+}
+#navigation section {
+    height: 170px;
+    text-align: center;
+    padding-left: 23px;
+}
+#navigation p {
+    color: #cbcbcb;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    list-style-type: none;
+    float: left;
+    padding-left: 4px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-top: 25px;
+    text-shadow: 1px 1px 1px black;
+    }
+
+/********** the following code for links is modified from Marcel's stack overflow demo. http://jsfiddle.net/Marcel/xejsM/52/ */
+a {
+    text-decoration: none;
+    color: #cbcbcb;
+    /* First we need to help some browsers along for this to work.
+        Just because a vendor prefix is there, doesn't mean it will
+        work in a browser made by that vendor either, it's just for
+        future-proofing purposes I guess. */  
+    -o-transition:color .2s ease-out, background 2s ease-in;
+    -ms-transition:color .2s ease-out, background 2s ease-in;
+    -moz-transition:color .2s ease-out, background 2s ease-in;
+    -webkit-transition:color .2s ease-out, background 2s ease-in;
+    /* ...and now for the proper property */
+    transition:color .2s ease-out, background 2s ease-in;
+    }
+
+a:hover { color: purple;}
+i:hover {color: purple}
+
+
+#extra_info {
+    margin-top: 700px;
+    font-size: 60px;
+    color: #cbcbcb;
+    height: 220px;
+}
+i {
+    color: white;
+}
+#extra_info span {
+    height: 10px;
+}
+
+/*********************************** footer **********************/
+
+h3 {
+    font-family: 'Damion', cursive;
+    font-size: 80px;
+    text-shadow: 3px 3px black;
+}
+footer {
+    width: 1366px;
+    margin-top: 170px;
+    color: purple;
+    font-size: 46px;
+    text-align: center;
+    background: #97c08a;
+    padding: 5px 0px 40px 0px;
+    line-height: 50px;
+}  

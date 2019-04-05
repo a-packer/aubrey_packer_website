@@ -1,0 +1,59 @@
+
+/**************** This is the style-sheet for the About page on Brianne Packer Photography */
+
+body {
+    background: whitesmoke;
+    color: #363433;
+}
+
+#about_me div {
+    margin-bottom: 40px;
+}
+
+#about_me h1 {
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    background-color: #1F281F;
+    background-image: url("../../img/aubrey-photo.jpg");
+    height: 100px;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    text-shadow: 1px 1px #363433;
+}
+
+#about_me h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px 0 0 15px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+#about_me p {
+    font-size: 38px; 
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 0 25px 15px;
+    padding: 0px;
+}
+
+#about_me footer { 
+    background-image: url("../../img/adi-tracks.jpg");
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    height: 150px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 70px;
+    text-shadow: 1px 1px #363433;
+}
+
+#about_me footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 80px;
+    text-shadow: 1px 1px #363433;
+}
