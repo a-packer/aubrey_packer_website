@@ -16,6 +16,9 @@ nav {
     float: right;
     height: 20px;
 }
+nav ul {
+    margin: 5px 5px 0px 0px;
+}
 nav ul li{
     display: inline-block;
     margin: 0px;
@@ -72,7 +75,7 @@ header h2 {
     display: none;
 }
 #skills h2 {
-    font-size: 35px;
+    font-size: 30px;
     color: #c49075;
     word-spacing: 1px;
     margin-bottom: 25px;
@@ -106,7 +109,7 @@ header h2 {
 
 #skills p {
     font-family: 'Lora',serif;
-    font-size: 23px;
+    font-size: 19px;
     line-height: 45px;
     padding: 0 5%;
     color: #7f7f7f;
@@ -114,7 +117,7 @@ header h2 {
     margin-top: 0px;
 }
 
-/************************* Link to portfolio phone styles ********************/
+/****************** Link to portfolio phone styles ****************/
 
 
 
@@ -144,8 +147,8 @@ header h2 {
     color: #b1ccd3; 
 }
 
-
-/*********************************************************** Work/ Portfolio phone styles ***********************/
+**
+/**************************************** Work/ Portfolio phone styles **********************************/
 
 #portfolio_body {
     background-color: #ebf3f5;
@@ -153,9 +156,12 @@ header h2 {
 
 .container {
     position: relative;
-    width: 100%;
     margin-top: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .container:hover .image {
     opacity: 0.3;
 }
@@ -219,6 +225,7 @@ padding: 0px 0px 0px 0px;
 width: 50%;
 margin-left: 25%;
 background: #ebf3f5;
+padding-top: 15px;
 }
 
 #contact #envelope {
@@ -254,7 +261,7 @@ text-align: center;
 text-decoration: none;
 color: #c49075;
 font-weight: bold;
-font-size: 25px;
+font-size: 24px;
 width: 100%;
 text-align: center;
 }
@@ -269,11 +276,13 @@ font-weight: bold;
 line-height: 44px;
 margin: 40px 0 0 0px;
 }
+
 #contact ul {
 list-style: none;
 padding: 0px;
-
+margin: 0px;
 }
+
 #contact ul li {
 display: inline-block;
 padding: 0px 0px 15px 0px;
@@ -288,13 +297,15 @@ font-size: 22px;
 /***************************** ABOUT phone styles *****************/
 
 #about p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
 }
 
 #about {
     padding-top: 5px;
+    padding-bottom: 15px;
     background:  #d7e7eb;
+    overflow: auto;
 
 }
 #about h2 {
@@ -303,13 +314,32 @@ font-size: 22px;
     font-style: bold;
     color: #c49075;
     margin-bottom: 0px;
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 0px 15px;
+}
+#about div.half-width {
+    width: 100%;
+}
+#about p {
+    font-size: 14px;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: auto;
+    color:  #7f7f7f;
+}
+
+#about span  {
+    padding-left: 30px;
+    font-weight: bold;
 }
 
 
 
-@media screen and (min-width: 768px) {   /******************************************* Tablet Styles ****************************************/
 
+/*************************************************************** Tablet Styles ****************************************************/
+/*******************************************************************************/
+
+@media screen and (min-width: 768px) {   
 
     /***** Base styles *****/
 
@@ -338,24 +368,23 @@ font-size: 22px;
 
 
     #contact, #skills {
-        min-height: 610px;
+        overflow: auto;
     }
 
 
-    /***************************************** Header Tablet ******************************/
+    /******************** Header Tablet *********************/
 
 
     header h1 { 
-        padding: 15px 0 15px 0px;
+        padding: 35px 0 15px 0px;
         font-family: 'Lora', serif;
-        font-size: 60px;
+        font-size: 65px;
     }
     header h2 {
         clear: both;
-        font-family: 'Lora', serif;
-        font-size: 40px;
-        line-height: 90px;
-        padding: 0px;
+        font-size: 38px;
+        line-height: 65px;
+        padding: 0px 0px 10px 0px;
         margin: 0px;
     }
 
@@ -374,7 +403,7 @@ font-size: 22px;
         font-size: 15px;
     }
 
-    /**************************************** Navigation Tablet *************************/
+    /********************** Navigation Tablet *******************/
 
     nav {
         float: right; 
@@ -390,11 +419,10 @@ font-size: 22px;
         margin-right: 14px;
         margin-left: 10px;
         color: #d7e7eb;
-        text-shadow: -1px -1px  black;
     }
 
 
-    /****************************** Skills Section Tablet **************************/
+    /******************** Skills Section Tablet ****************/
     #skills section {
         height: auto;
     }
@@ -420,6 +448,11 @@ font-size: 22px;
     #skills i {
         color: #7f7f7f;
         font-size: 50px;
+    }
+
+    #third-width div {
+        padding-top: 10%;
+        height: auto;
     }
 
 
@@ -448,7 +481,7 @@ font-size: 22px;
         font-size: 44px;
         }
 
-    /********************************* Contact/Footer ******************************/
+    /********************** Contact/Footer *************************/
 
 
 
@@ -507,19 +540,16 @@ font-size: 22px;
 
 
     
-    /********************************************************************** ABOUT Page Tablet ********************************************/
+    /************************************************** ABOUT Page Tablet ***********************************/
 
 
-    #about {
-        height: 450px;
-    }
+    
     #about div.half-width {
         width: 50%;
     }
 
     #about h2 {
         font-size: 40px;
-        font-style: bold;
         padding-left: 50px;
         padding-bottom: 0px;
         margin-bottom: 0px;
@@ -528,21 +558,20 @@ font-size: 22px;
 
     #about p {
         font-size: 28px;
-        color: #7f7f7f;
         line-height: 45px;
         padding-left: 50px;
         padding-right: 50px;
-        overflow: hidden;
     }
 
     #about span  {
         padding-left: 50px;
-        font-weight: bold;
     }
 
 
 
-    /************************************************************* Tablet Work Portfolio Page Styles ***********************************************************/
+
+
+    /************************************ Tablet Work Portfolio Page Styles *********************************************/
 
   
     .container {
@@ -572,8 +601,8 @@ font-size: 22px;
     }
 }   
 
-/***************************************** Laptop styles ****************************************/
-/****************************************************************************/
+/***************************************** Laptop styles ********************************************************************************************************************/
+/******************************************************************************************************************/
 
 @media screen and (min-width: 1200px) {
 
@@ -595,8 +624,7 @@ font-size: 22px;
     }
 
 
-
-    header h1 {
+    header h1, header h1 a {
     width: auto;
     text-align: left;
     padding-left: 50px;
@@ -611,6 +639,12 @@ font-size: 22px;
         padding-right: 15px;
         text-align: right;
     }
+
+
+    #about div.half-width {
+        width: 50%;
+    }
+    /********************* Skills laptop styles ***********/
 
     #skills h2 {
         font-size: 50px;
@@ -641,6 +675,8 @@ font-size: 22px;
         font-size: 48px;
     }
     
+
+    /*********************** Footer laptop Styles *************/
     div.half-width {
         width: 45%;
     }
