@@ -1,0 +1,286 @@
+
+/**** Universal styles ****/
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+}
+h4 {
+    font-size: 20px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400px;
+}
+body {
+    background-color: #f6f6f6;
+}
+
+.slideanim {visibility: hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0 to 100% opacity and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%)
+    }
+}
+
+/**************** navbar ****************/
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #B2125E;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #B2125E !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+/***************  heading *****************/
+
+
+.jumbotron {
+  background-image: url("../img/coffee-blue-crop1.jpg"); /* The image used */
+  background-color: #5AA6B2; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+}
+.jumbotron h1 {
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: bold;
+    text-shadow: 1px 1px 18px black;
+}
+.jumbotron p {
+    font-size: 50px;
+    text-shadow: 1px 1px 8px black;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+} 
+.container-fluid {
+    padding: 20px 50px;
+}
+
+
+
+/*************** menu **********************/
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    margin-bottom: 10px;
+}
+.thumbnail p {
+    font-size: 28px;
+}
+/**************** review carousel **************/
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #5AA6B2;
+}
+.carousel-indicators li {
+    border-color: #5AA6B2;
+}
+.carousel-indicators li.active {
+    background-color: #5AA6B2;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: italic;
+    margin: 50px 40px;
+}
+.item span {
+    font-style: normal;
+}
+/********************* About : Mission ***********************/
+#happy-customer {
+    max-width: 100%;
+}
+#about div {
+    background-color: white;
+}
+div#about h4{
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 5%;
+    }
+
+
+/***************** Featured artists/authors *********************/
+
+.panel {
+    border: 1px solid #B2125E;
+    border-radius: 0;
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0 .2);
+}
+.panel-footer .btn:hover {
+    border: 1px solid #B2125E;
+    background-color: #fff !important;
+    color: #B2125E;
+}
+.panel-heading {
+    color: #fff !important;
+    background-color: #B2125E !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.panel-body p {
+    font-size: 18px;
+}
+.panel-footer {
+    background-color: #fff !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+.panel-footer .btn {
+    margin: 15px 0px;
+    background-color: #B2125E;
+    color: #fff;
+}
+/****************** contact *******************/
+
+div#contact h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+div#contact p {
+    font-size: 16px;
+}
+
+/***************** Values *********************/
+
+div#values h4 {
+    font-size: 20px;
+}
+div#values p {
+    font-size: 18px;
+}
+div#values {
+    background-color: #fff;
+}
+
+/****** Values logos *****/
+.logo {
+    color: #5AA6B2;
+    font-size: 200px;
+}
+.logo-small {
+    color: #5AA6B2;
+    font-size: 50px;
+}
+
+/****************** footer ********************/
+
+footer { 
+  background-image: url("../img/coffee-blue-crop1.jpg"); /* The image used */
+  background-color: #5AA6B2; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    font-size: 20px;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (min-device-width: 1200px){
+    div#about h4{
+        font-size: 30px;
+        line-height: 45px;
+        padding-bottom: 5%;
+    }
+    div#about h2 {
+        padding-top: 5%;
+    }
+
+    .item h4 {
+    font-size: 2em;
+    line-height: 2.25em;
+    font-weight: italic;
+    margin: 20px 80px 80px 80px;
+    }
+    .item {
+        color: red;
+    }
+
+    div#contact p {
+        font-size: 22px;
+    }
+}
