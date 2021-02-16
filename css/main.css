@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 h1 {
     padding: 0px;
 }
@@ -30,6 +34,9 @@ nav ul li a {
     padding-right: 5px;
     color: #d7e7eb;
     margin: 0px;
+}
+nav ul li :hover {
+    color: #d7e7eba4;
 }
 header {
     background-image: url('../img/water-background-alt2.png');
@@ -94,7 +101,11 @@ header h2 {
 #skills div {
     padding-bottom: 15px;
     font-size: 18px;
+    display: block;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
 #skills i {
     color: #7f7f7f;
     font-size: 50px;
@@ -105,8 +116,30 @@ header h2 {
     line-height: 39px;
     text-align: center;
     color: #7f7f7f;
-    margin-top: 0px;
-    margin-bottom: 5px;
+    margin-top: 0px;   
+    margin-bottom: 10px; 
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.collapsible {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 4px #7f7f7f solid;
+    border-radius: 5pt;
+    background-color: #ebf3f5;
+}
+h5.collapsible:hover {
+    opacity: 0.8;
+}
+h5.collapsible.active {
+    background-color: #d7e7eb;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 #skills p {
@@ -121,8 +154,6 @@ header h2 {
 
 /****************** Link to portfolio phone styles ****************/
 
-
-
 #portfolio {
     padding: 15px 15px 15px 15px;
     background: #c49075;
@@ -130,13 +161,11 @@ header h2 {
     font-size: 28px;
     text-align: center;
     color: #d7e7eb;
-    text-shadow: 2px 2px grey;
 }
 
 #portfolio a {
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px grey;
 }
 
 #portfolio span {
@@ -450,6 +479,8 @@ font-size: 22px;
     #skills div {
         padding-bottom: 15px;
         font-size: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     #skills i {
         color: #7f7f7f;
@@ -463,9 +494,9 @@ font-size: 22px;
 
 
     #skills h5 {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 39px;
-        width: 190px;
+        width: 140px;
         margin: 0 auto;
         color: #7f7f7f;
     }
@@ -672,9 +703,10 @@ font-size: 22px;
         padding-top: 20px;
     }
     #skills h5 {
-        font-size: 23px;
+        font-size: 28px;
         width: auto;
-        padding-bottom: 15px;
+        margin: 1% 10%;
+        padding: 5%;
     }
 
     #skills p {

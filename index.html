@@ -34,7 +34,7 @@
    
     </div>
 
-    <h2> ex-chemist gone wild with the web </h2>
+    <h2> chemist gone wild with the web </h2>
 
 </header>
 
@@ -52,9 +52,9 @@
                 <div class="third-width">
 
                     <div class="skill-icon"><i class="fas fa-paperclip"></i></div>
-                    <h5> Organized </h5>
+                    <h5 class='collapsible'>Organized</h5>
 
-                    <p> I write code, keeping in mind my future-self and collaborators. 
+                    <p class="content"> I write code, keeping in mind my future-self and collaborators. 
                         Comments and an organized layout are a priority as I develop websites. 
                     </p>
 
@@ -63,9 +63,9 @@
                 <div class="third-width">
 
                     <div class="skill-icon"><i class="fas fa-tasks"></i></div>
-                    <h5> Self-Motivated </h5>
+                    <h5 class='collapsible'>Self-Motivated</h5>
 
-                    <p> I've studied code remotely using self-paced classes and tutorials. 
+                    <p class="content"> I've studied code remotely using self-paced classes and tutorials. 
                         I'm disciplined enough to set goals and and timelines and hold myself accountable. 
                     </p>
 
@@ -73,10 +73,10 @@
 
                 <div class="third-width">
 
-                    <div class="skill-icon"><i class="fas fa-wrench"></i></div>
-                    <h5> Troubleshooting </h5>
+                    <div class="icon"><i class="fas fa-wrench"></i></div>
+                    <h5 class='collapsible'>Troubleshooting</h5>
 
-                    <p> My speciality in the lab was troubleshooting instruments and methods.
+                    <p class="content"> My speciality in the lab was troubleshooting instruments and methods.
                         If something doesn't work, you can count on me to find the problem and fix it!
                     </p>
 
@@ -119,6 +119,23 @@
         </div>
     </div>
 </footer>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
 </body>
 
