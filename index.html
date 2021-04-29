@@ -5,136 +5,184 @@
     <title>Aubrey Packer</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">      
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+
 
 </head>
 
 <header> 
+      <!--******************************************** Navigation bar **********************************************-->
 
-    <div class="full-width">
-
-        <!--******************************************** Navigation bar **********************************************-->
-        
-        <nav>
-            <ul>
-                <li><a href="about/index.html">About</a></li>
-                <li><a href="work/index.html">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>                 
-            </ul>
-        </nav>
-      
-
-
-        <h1>Aubrey Packer</h1>
-   
+    <div>
+        <div class="topnav container" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="work/index.html">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="about/index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="topNav()">&#9776;</a>
+        </div>
     </div>
-
-    <h2> chemist gone wild with the web </h2>
-
+    
+    
 </header>
+   
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">      
+            <h1 class="display-4">Aubrey Packer</h1>
+            <h3>Python, JS, HTML & CSS</h3>          
+
+        </div>
+    </div>
 
 <body> 
     
     <main>
-
+     
 
         <!--*************************************************** Skills Section *************************************************-->
-        <section id="skills">
-            <div class="full-width">
+        <section id="skills" class="container">
 
-                <h2> HTML & CSS <span>-</span> JavaScript <span>-</span> Python <span>-</span> WordPress </h2>
+            <a href="work/index.html"><button id="to_portfolio" class="btn btn-block-lg">Check out my portfolio</button></a>
 
-                <div class="third-width">
+            <div class="row">
 
-                    <div class="skill-icon"><i class="fas fa-paperclip"></i></div>
-                    <h5 class='collapsible'>Organized</h5>
-
-                    <p class="content"> I write code, keeping in mind my future-self and collaborators. 
-                        Comments and an organized layout are a priority as I develop websites. 
-                    </p>
-
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header collapsible">
+                            <i class="fas fa-tasks"></i><h3>Self-Motivated</h3>
+                        </div>
+                        <div class="card-body skill">
+                        
+                            <p class="card-text"> 
+                                I've studied code remotely using self-paced classes and tutorials. 
+                                I set goals and create timelines and hold myself accountable. 
+                            </p>
+                        </div>
+                    </div>                    
                 </div>
 
-                <div class="third-width">
-
-                    <div class="skill-icon"><i class="fas fa-tasks"></i></div>
-                    <h5 class='collapsible'>Self-Motivated</h5>
-
-                    <p class="content"> I've studied code remotely using self-paced classes and tutorials. 
-                        I'm disciplined enough to set goals and and timelines and hold myself accountable. 
-                    </p>
-
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header collapsible">
+                            <i class="fas fa-wrench"></i><h3>Problem Solver</h3>
+                        </div>
+                        <div class="card-body skill">
+                            <p class="card-text"> 
+                                My speciality in the lab was fixing instruments.
+                                If something doesn't work, you can count on me to find the problem and fix it! 
+                            </p>
+                        </div>
+                    </div>      
                 </div>
 
-                <div class="third-width">
-
-                    <div class="icon"><i class="fas fa-wrench"></i></div>
-                    <h5 class='collapsible'>Troubleshooting</h5>
-
-                    <p class="content"> My speciality in the lab was troubleshooting instruments and methods.
-                        If something doesn't work, you can count on me to find the problem and fix it!
-                    </p>
-
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header collapsible">
+                            <i class="fas fa-paperclip"></i><h3>Organized</h3>
+                        </div>
+                        <div class="card-body skill">
+                            <p class="card-text"> 
+                                I write code, keeping in mind my future-self and collaborators. 
+                                Comments and an organized layout are a priority as I code.  
+                            </p>
+                        </div>
+                    </div>      
                 </div>
 
             </div>
 
         </section>
 
-        <!--**************************************************** Portfolio *********************************************************-->
-
-        <p id="portfolio"><a href="work/index.html"> Click <span>here</span> to see some of my work!</a></p>
-
     </main>
 
     <!--*************************************************** Contact Section **************************************************-->
+
 <footer id="contact">
-    <div class="full-width">
 
-        <div class="half-width">
-            <img id="contact-image" src="img/aubrey-photo.jpg" alt="contact image"/>
-        </div>
+    <div class="container">
 
-        <div class="half-width" id="contact-info">
+            <div id="contact-info" class="row">
+                
+                <div class="col-sm-12 col-md-8">
 
-            <h2> Interested in working together? </h2>
-            <h3 id="email-header">Let's chat! </h3>
-            <p><a href="mailto:aubreypacker5@gmail.com"><img id="envelope" src="img/envelope.png" alt="envelope"/>aubreypacker5@gmail.com</a></p>
-            <p id="social-media-header">Or, find me on the interwebs</p>
-            
-            <div>
-                <ul>
-                    <!-- <li><a href="https://aubreyloveslife.tumblr.com/m" target="_blank"><img src="img/tumblr.png" alt="tumblr icon"/></a></li> -->
-                    <li><a href="https://www.linkedin.com/in/aubrey-packer-99a59937/" target="_blank"><img src="img/linkedin.png" alt="linkedin icon"/></a></li>
-                    <li><a href="https://github.com/AubreyLovesLife" target="_blank"><img src="img/github.png" alt="github icon"/></a></li>
-                    <!--<li><a href="https://www.instagram.com/aubrey.packer/" target="_blank"><img src="img/instagram.png" alt="github icon"/></a></li>-->
-                </ul>
+                    <h3>Shoot me and email</h3>
+                    
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>  
+                    </div> 
+
+                    <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br>     
+
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-dark pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div id="web-presence" class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div>
+                        <h2>Web Presence</h2>
+                        <div class="row d-flex justify-content-center">
+                            <a href="https://github.com/AubreyLovesLife" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/aubrey-packer-99a59937/" target="_blank"><i class="fab fa-linkedin-in"></i> 
+                            <a href="https://maurple.wpengine.com/"><i class="fab fa-wordpress-simple"></i></a>  
+                        </div>                
+                    </div>
+                </div>
+
+    
             </div>
-
-        </div>
+        
     </div>
 </footer>
 
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
+
+    // collapsible elements
+    // var coll = document.getElementsByClassName("collapsible");
+    // var i;
+    // for (i = 0; i < coll.length; i++) {
+    //   coll[i].addEventListener("click", function() {
+    //     this.classList.toggle("active");
+    //     var content = this.nextElementSibling;
+    //     if (content.style.maxHeight){
+    //       content.style.maxHeight = null;
+    //     } else {
+    //       content.style.maxHeight = content.scrollHeight + "px";
+    //     } 
+    //   });
+    // }
+  
+    // navbar onclick menu response
+    function topNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
+        x.className = "topnav";
+        }
     }
+
+
+
+
     </script>
 
 </body>

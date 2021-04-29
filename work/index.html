@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/work_styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet"> 
     <meta charset="utf-8">
@@ -15,76 +18,89 @@
   
 <!----******************************************* Header **********************************************-->
 
-<header>
+<header> 
+    <!--******************************************** Navigation bar **********************************************-->
 
-    <div class="full-width">
-        
-        <nav>
-            <ul>
-                <li><a href="../about/index.html">About</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>                 
-            </ul>
-        </nav>
-      
-        <h1><a href="../index.html">Aubrey Packer</a></h1>
-   
-    </div>
+  <div>
+      <div class="topnav container" id="myTopnav">
+          <a href="#" class="active">Home</a>
+          <a href="work/index.html">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a href="about/index.html">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="topNav()">&#9776;</a>
+      </div>
+  </div>
 
-    <h2> ex-chemist gone wild with the web </h2>
 </header>
+  
 
 <!--******************************************** Portfolio, Links to sites ****************************************-->
 
-<body id="portfolio_body">
-   
+<body>
     
-    <div class="container">
-        <img class="image" src="../img/amie-carter2.png" alt="amie carter website"/>  
-        <a href="https://a-packer.github.io/amie_carter/" target="_blank">
-            <div class="first">
-                <div class="text">Designed and created a website for a consultant</div>
-            </div>
-        </a>
-    </div>
+    <div class="container" id="work-examples">
+        <div class="row">
 
-    <div class="container">
-        <img class="image" src="../img/filter-site.png" alt="filter images website"/>
-        <a href="../image-filter-site/index.html" target="_blank">
-            <div class="second">
-                <div class="text">Using JS, created an interactive website with image filters</div>
+            <div class="col-md-6 text-right">
+                <a href="https://a-packer.github.io/amie_carter/"><img class="image" src="../img/amie-carter2.png" alt="amie carter website"/></a>
+
             </div>
-        </a>
-    </div> 
-    
-    <div class="container">
-            <img class="image" src="../img/maurple.png" alt="maruple blog"/>
-            <a href="https://maurple.wpengine.com/">
-                <div class="third">
-                    <div class="text">Put together a fun blog using WordPress</div>
-                </div>
-            </a>
+
+            <div class="col-md-6">                
+                <p class="align-middle">Designed and created a website for a consultant</p>
+                <a href="https://a-packer.github.io/amie_carter/" target="_blank"><button class="btn btn-light">Visit</button></a>
+            </div>
+
+            <div  class="col-md-6 text-right">
+                <p>Using JS, created an interactive website with image filters</p>
+                <a href="../image-filter-site/index.html" target="_blank"><button class="btn btn-light">Visit</button></a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="../image-filter-site/index.html"><img class="image" src="../img/filter-site.png" alt="filter images website"/></a>
+            </div>
+
+            <div class="col-md-6 text-right">
+                <a href="https://maurple.wpengine.com/"><img class="image" src="../img/maurple.png" alt="maruple blog"/></a>
+            </div>
+
+            <div class="col-md-6">
+                <p>Put together a fun blog using WordPress</p>
+                <a href="https://maurple.wpengine.com/"><button class="btn btn-light">Visit</button></a>
+            </div>
+
+            <div  class="col-md-6 text-right">
+                <p>Designed and created a website for a photographer</p>
+                <a href="../brianne-photography/index.html" target="_blank"><button class="btn btn-light">Visit</button></a>
+            </div>
+               
+            <div class="col-md-6">
+                <a href="../brianne-photography/index.html"><img class="image" src="../img/brianne-website.png" alt="contact image" alt="brianne's photography website"/></a>
+            </div>
+
+            <div class="col-md-6 text-right">
+                <a href="https://a-packer.github.io/unplugged/"><img class="image" src="../img/unplugged-website.png" alt="responsive website"/></a>
+            </div>
+
+            <div class="col-md-6">
+                <p>Coded a responsive website from a design by Skillcrush.</p>
+                <a href="https://a-packer.github.io/unplugged/" target="_blank"><button class="btn btn-light">Visit</button></a>
+            </div>
+
+            <div class="col-md-6 text-right">
+                <p>Designed this site with a lil' bit of bootstrap</p>
+                <a href="../cafe/index.html" target="_blank"><button class="btn btn-light">Visit</button class="btn"></a>
+            </div>
+
+            <div class="col-md-6"> 
+                <a href="../cafe/index.html"><img class="image" src="../img/cafe-website.png" alt="Enjoy Life Website Image"/></a>
+
+            </div>
+
         </div>
 
-    <div class="container">
-        <img class="image" src="../img/brianne-website.png" alt="contact image" alt="brianne's photography website"/>
-        <a href="../brianne-photography/index.html" target="_blank">
-            <div class="fourth">
-                <div class="text">Designed and created a website for a photographer</div>
-            </div>
-        </a>
     </div>
-    
-
-    <div class="container">
-        <img class="image" src="../img/unplugged-website.png" alt="responsive website"/>
-        <a href="https://a-packer.github.io/unplugged/" target="_blank">
-            <div class="fifth">
-                <div class="text">Coded a responsive website from a design by Skillcrush.</div>
-            </div>
-        </a>
-    </div>
-
+       
     
     <!-- <div class="container">
         <img class="image" src="../img/rogue-pickings.png" alt="rogue-pickings website"/>
@@ -95,14 +111,6 @@
         </a>
     </div> -->
 
-    <div class="container">
-        <img class="image" src="../img/cafe-website.png" alt="Enjoy Life Website Image"/>
-        <a href="../cafe/index.html" target="_blank">
-            <div class="seventh">
-                <div class="text">Designed this site with a lil' bit of bootstrap</div>
-            </div>
-        </a>
-    </div>
 
     
 </body> 
